@@ -93,6 +93,10 @@ li {
 
 @media screen and (max-width: 1024px) {
 
+  .left {
+    width: 100%;
+  }
+
   .right {
     width: auto;
   }
@@ -112,6 +116,19 @@ li {
 
   .menu {
     display: none;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left__description {
+    margin-left: 0;
   }
 
 }
