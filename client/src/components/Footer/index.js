@@ -11,9 +11,9 @@ const Footer = () => {
 
         <div className="link__wrapper">
           <li><Link className = "footer__link" to = "/">Work</Link></li>
-          <li><Link className = "footer__link" to = "/">Collaborations</Link></li>
-          <li><Link className = "footer__link" to = "/">About</Link></li>
-          <li><Link className = "footer__link" to = "/">Contact</Link></li>
+          <li><Link className = "footer__link" to = "/collaborations">Collaborations</Link></li>
+          <li><Link className = "footer__link" to = "/about">About</Link></li>
+          <li><Link className = "footer__link" to = "/contact">Contact</Link></li>
         </div>
 
       </nav>
