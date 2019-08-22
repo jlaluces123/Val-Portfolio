@@ -5,6 +5,8 @@ import "./navigation.css";
 import { NavLink } from "react-router-dom";
 
 const Navigation = (props) => {
+  console.log(window.location.pathname === "/"); //yields: "/js" (where snippets run)
+
 
   return (
     <div className="navigation">
@@ -20,10 +22,10 @@ const Navigation = (props) => {
         */}
         <span onClick = {props.handleMenu} className = {props.visible ? "close" : "nav__menu"}>&#9776;</span>
         <nav className = {props.visible ? "hidden__menu" : "menu"}>
-          <li><NavLink className = "nav__link" exact to = "/">Work</NavLink></li>
-          <li><NavLink className = "nav__link" to = "/collaborations">Collaborations</NavLink></li>
-          <li><NavLink className = "nav__link" to = "/about">About</NavLink></li>
-          <li><NavLink className = "nav__link" to = "/contact">Contact</NavLink></li>
+          <li><NavLink className = {props.work ? "nav__link current__page" : "nav__link"} exact to = "/">Work</NavLink></li>
+          <li><NavLink className = {props.collab ? "nav__link current__page" : "nav__link"} to = "/collaborations">Collaborations</NavLink></li>
+          <li><NavLink className = {props.about ? "nav__link current__page" : "nav__link"} to = "/about">About</NavLink></li>
+          <li><NavLink className = {props.contact ? "nav__link current__page" : "nav__link"} to = "/contact">Contact</NavLink></li>
         </nav>
       </div>
     </div>

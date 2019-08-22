@@ -106,6 +106,12 @@ li {
   color: black;
 }
 
+.current__page {
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
 /*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
