@@ -34,3 +34,34 @@
   padding-bottom: 5px;
   border-bottom: 2px solid black;
 }
+
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .link__wrapper {
+    width: 40%;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .link__wrapper {
+    width: 70%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .link__wrapper {
+    width: 100%;
+  }
+
+}
