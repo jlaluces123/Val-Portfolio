@@ -28,10 +28,17 @@ class App extends React.Component {
     this.setState({ visible: !this.state.visible });
   };
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps, prevState) {
     console.log("update occurred");
+    // this.readPage();
   }
 
+  /*
+    Current Issue:
+      - Only checks once from componentDidMount()
+        - ex) if i switch to /about from / it will render / as the black text
+      - Find a way to update and make a call each time the page is redirected
+  */
   readPage = (e) => {
     let currentPage = window.location.pathname;
 
