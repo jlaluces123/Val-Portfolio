@@ -10,7 +10,7 @@ const Navigation = (props) => {
     <div className="navigation">
       <div className="left">
         <h2 className="logo">VALERIE M.</h2>
-        <span className="left__description">Photographer - Los Angeles</span>
+        <span className="left__description">Photographer • Los Angeles</span>
       </div>
 
       <div className="right">

@@ -6,6 +6,7 @@ import { Route, Switch } from "react-router-dom";
 
 // Component Imports
 import Navigation from "./components/Navigation/index.js";
+import Home from "./components/Home/index.js";
 
 class App extends React.Component {
   state = {
@@ -26,11 +27,10 @@ class App extends React.Component {
         </header>
 
         <main>
-          <h2>Hello World</h2>
-          {/* <Switch>
+          <Switch>
             <Route exact path = "/" component = {Home} />
-            <Route path = "/" component = {Contact} />
-          </Switch> */}
+            {/* <Route path = "/" component = {Contact} /> */}
+          </Switch>
         </main>
       </div>
     );

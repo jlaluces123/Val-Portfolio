@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: 100px;
 }
 
 .left {
@@ -73,6 +73,12 @@
   font-size: 2rem;
 }
 
+.hidden__menu .nav__link:hover {
+  transition: 0.1s ease-in-out;
+  border-bottom: 2px solid white;
+  color: #ADADAD;
+}
+
 .hidden__menu li {
   margin-bottom: 2%;
 }
@@ -84,6 +90,14 @@ li {
 .nav__link {
   text-decoration: none;
   color: #ADADAD;
+  transition: 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+  transition: 0.1s ease-in-out;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  color: black;
 }
 
 /*
