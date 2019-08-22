@@ -32,13 +32,19 @@ class App extends React.Component {
     console.log("update occurred");
   }
 
-  readPage = () => {
+  readPage = (e) => {
     let currentPage = window.location.pathname;
 
     if (currentPage === "/") {
-      this.setState({ work: true });
+      this.setState({
+        work: true,
+        collab: false
+      });
     } else if (currentPage === "/collaborations") {
-      this.setState({ collab: true });
+      this.setState({
+        collab: true,
+        work: false,
+      });
     };
   };
 

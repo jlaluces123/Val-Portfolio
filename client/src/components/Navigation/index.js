@@ -2,7 +2,7 @@ import React from 'react';
 import "./navigation.css";
 
 // Module imports
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navigation = (props) => {
   console.log(window.location.pathname === "/"); //yields: "/js" (where snippets run)
@@ -11,7 +11,7 @@ const Navigation = (props) => {
   return (
     <div className="navigation">
       <div className="left">
-        <h2 className="logo">VALERIE M.</h2>
+        <h2 className="logo"><Link className = "logo__link" to = "/">VALERIE M.</Link></h2>
         <span className="left__description">Photographer • Los Angeles</span>
       </div>
 

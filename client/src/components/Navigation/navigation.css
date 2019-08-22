@@ -19,6 +19,17 @@
   font-weight: bolder;
 }
 
+.logo__link {
+  text-decoration: none;
+  color: black;
+}
+
+.logo__link:hover {
+  transition: 0.1s ease-in-out;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
 .left__description {
   margin-left: 2%;
   font-family: 'Lato', sans-serif;
