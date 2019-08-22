@@ -14,8 +14,11 @@ const Navigation = (props) => {
       </div>
 
       <div className="right">
-        <span onClick = {props.handleMenu} className = {props.visible ? "close" : "nav__menu"} htmlFor="toggle">&#9776;</span>
-        {/* <input className = "check" type="checkbox" name="menu" id="toggle"/> */}
+        {/*
+          - handleMenu will use a visibility flag in App.js' state to display the menu when true
+          - className checks visibility state and displays the correct className when needed
+        */}
+        <span onClick = {props.handleMenu} className = {props.visible ? "close" : "nav__menu"}>&#9776;</span>
         <nav className = {props.visible ? "hidden__menu" : "menu"}>
           <li><NavLink className = "nav__link" exact to = "/">Work</NavLink></li>
           <li><NavLink className = "nav__link" to = "/collaborations">Collaborations</NavLink></li>
@@ -24,7 +27,8 @@ const Navigation = (props) => {
         </nav>
       </div>
     </div>
-  );
-}
+  ); // return statement
+
+} // component end
 
 export default Navigation;
