@@ -7,6 +7,8 @@ import { Route, Switch } from "react-router-dom";
 // Component Imports
 import Navigation from "./components/Navigation/index.js";
 import Home from "./components/Home/index.js";
+import Collaborations from './components/Collaborations/index.js';
+import Footer from "./components/Footer/index.js";
 
 class App extends React.Component {
   state = {
@@ -27,11 +29,17 @@ class App extends React.Component {
         </header>
 
         <main>
-          <Switch>
-            <Route exact path = "/" component = {Home} />
-            {/* <Route path = "/" component = {Contact} /> */}
-          </Switch>
+          <div className="content__wrapper">
+            <Switch>
+              <Route exact path = "/" component = {Home} />
+              <Route path = "/collaborations" component = {Collaborations} />
+            </Switch>
+          </div>
         </main>
+
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
