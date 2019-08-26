@@ -8,6 +8,7 @@ import { Route, Switch } from "react-router-dom";
 import Navigation from "./components/Navigation/index.js";
 import Home from "./components/Home/index.js";
 import Collaborations from './components/Collaborations/index.js';
+import About from "./components/About/index.js";
 import Footer from "./components/Footer/index.js";
 
 class App extends React.Component {
@@ -75,6 +76,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path = "/" component = {Home} />
               <Route path = "/collaborations" component = {Collaborations} />
+              <Route path = "/about" component = {About} />
             </Switch>
           </div>
         </main>
