@@ -40,7 +40,7 @@ class Home extends React.Component {
                 <img className = "image" src = {pic.download_url} alt = "lorem picsum" />
                 <Link to = "/">
                   <div className="home__overlay">
-                    <Link to = "/" className = "overlay__text">Home</Link>
+                    <span className = "overlay__text">Home</span>
                   </div>
                 </Link>
               </ScrollAnimation>
