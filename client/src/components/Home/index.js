@@ -36,7 +36,7 @@ class Home extends React.Component {
         <div className="image__wrapper">
           {this.state.pictures.map(pic => {
             return (
-              <ScrollAnimation animateOnce = {true} duration = {0.3} className = "animation__image" key = {pic.id} animateIn = "fadeIn">
+              <ScrollAnimation animateOnce = {true} duration = {0.6} className = "animation__image" key = {pic.id} animateIn = "fadeIn">
                 <img className = "image" src = {pic.download_url} alt = "lorem picsum" />
                 <Link to = "/">
                   <div className="home__overlay">
