@@ -3,6 +3,7 @@ import "./home.css";
 
 // Module imports
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
   state = {
@@ -37,6 +38,9 @@ class Home extends React.Component {
             return (
               <ScrollAnimation animateOnce = {true} duration = {0.3} className = "animation__image" key = {pic.id} animateIn = "fadeIn">
                 <img className = "image" src = {pic.download_url} alt = "lorem picsum" />
+                <div className="home__overlay">
+                  <Link to = "/" className = "overlay__text">Home</Link>
+                </div>
               </ScrollAnimation>
             )
           })}
