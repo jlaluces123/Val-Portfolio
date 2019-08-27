@@ -38,9 +38,11 @@ class Home extends React.Component {
             return (
               <ScrollAnimation animateOnce = {true} duration = {0.3} className = "animation__image" key = {pic.id} animateIn = "fadeIn">
                 <img className = "image" src = {pic.download_url} alt = "lorem picsum" />
-                <div className="home__overlay">
-                  <Link to = "/" className = "overlay__text">Home</Link>
-                </div>
+                <Link to = "/">
+                  <div className="home__overlay">
+                    <Link to = "/" className = "overlay__text">Home</Link>
+                  </div>
+                </Link>
               </ScrollAnimation>
             )
           })}
