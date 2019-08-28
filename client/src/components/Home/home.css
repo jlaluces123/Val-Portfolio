@@ -5,7 +5,7 @@
 .image__wrapper {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-row-gap: 40px;
   align-items: center;
 }
 
